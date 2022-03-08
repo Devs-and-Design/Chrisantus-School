@@ -11,21 +11,21 @@ body {
 /* Navbar */
 #navbar {
     display: grid;
-    padding: 15px 50px;
+    padding: 8px 50px;
     align-items: center;
     border-bottom: 1px solid #E3DCDC;
 }
 
 .nav-links{
     grid-column: 2/ span 2;
-    
+    justify-self: end;
 }
 
 .nav-links a {
     text-decoration: none;
     color: #040728;
     font-weight: 500;
-    font-size: 1.125rem;
+    font-size: 14px;
 }
 
 .nav-links a:hover,  .nav-links a.active{
@@ -39,7 +39,9 @@ body {
 
 /* Logo */
 .logo {
+    width: 90px;
     grid-column: 1/2;
+    justify-self: end;
 }
 
 /* Navbar Menu */
@@ -47,6 +49,11 @@ body {
     display: flex;
     gap: 2em;
     justify-content: center;
+}
+
+/* Header */
+#header {
+    height: 100vh;
 }
 
 /* Search Button */
@@ -57,7 +64,7 @@ body {
 
 #search button {
     background-color: transparent;
-    padding: 10px;
+    /* padding: 10px; */
     padding-left: 20px;
     padding-right: 5px;
     border: 2px solid #6D6C8D;
@@ -67,6 +74,7 @@ body {
     border-bottom-right-radius: 0;
     position: relative;
     left: 5px;
+    height: 32px;
 }
 
 #search input {
@@ -77,11 +85,12 @@ body {
     border-top-left-radius: 0%;
     border-bottom-left-radius: 0;
     user-select: none;
+    height: 32px;
 }
 
 #search input::placeholder{
     font-family: "Montserrat";
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: 500;
     color: #7D7E86;
 }
@@ -97,13 +106,13 @@ body {
    
 .hamburger {
     display: none;
-    font-size: 1.5rem;
+    font-size: 24px;
     color: #000;
 }
 
 /* School Name */
 .school-name {
-    padding: 20px 0px;
+    padding: 10px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,13 +120,14 @@ body {
 }
 
 .school-name h1{
-    font-size: 7.8125rem;
+    font-size: 90px;
     font-weight: 400;
     font-family: "Pulang";
     background: linear-gradient(#4761EA, #6e08efab);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
+    width: 100%;
 }
 
 .school-name h4 {
@@ -126,22 +136,23 @@ body {
     color: #4761EA;
     font-weight: 700;
     align-self: flex-end;
-    padding-right: 200px;
+    position: relative;
+    right: 340px;
 }
 
 /* School Mission */
 .school-mission {
-    padding: 25px 50px;
+    padding: 15px 50px;
     padding-bottom: 50px;
     background-color: #F8EEEE;
     text-align: center;
 }
 
 .school-mission p {
-    padding: 0px 230px;
+    padding: 0px 200px;
     padding-bottom: 40px;
     color: #050F47;
-    font-size: 1.25rem;
+    font-size: 16px;
     line-height: 32px;
     font-weight: 500;
 }
@@ -151,11 +162,11 @@ body {
     color: #fff;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 18px;
     background-color: #0F6470;
     box-shadow: 4px 4px 4px rgba(24, 170, 190, 0.41);
     border-radius: 5px;
-    padding: 22px 100px;
+    padding: 18px 80px;
 }
 
 /* Features */
@@ -163,13 +174,13 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 50px 20px;
+    padding: 30px 20px;
     flex-wrap: wrap;
 }
 
 .features p {
     font-weight: 500;
-    font-size: 1.375rem;
+    font-size: 18px;
     color: #000;
     padding-left: 10px;
 }
@@ -219,7 +230,7 @@ body {
 
 .environment h2 {
     font-weight: 500;
-    font-size: 2.25rem;
+    font-size: 36px;
     color: #050B2D;
     padding-bottom: 25px;
 }
@@ -270,7 +281,7 @@ body {
 
 .events-images p {
     font-weight: 600;
-    font-size: 1.75rem;
+    font-size: 28px;
     line-height: 40px;
     color: #07287D;
     text-align: center;
@@ -288,7 +299,7 @@ body {
 
 .kids-awards h2 {
     font-weight: 500;
-    font-size: 2.25rem;
+    font-size: 36px;
     color: #050B2D;
 }
 
@@ -315,7 +326,7 @@ body {
 
 #kids-slide-1 p, #kids-slide-2 p, #kids-slide-3 p {
     font-weight: 500;
-    font-size: 1.125rem;
+    font-size: 18px;
     color: #050B2D;
     text-align: left;
     padding: 20px 0px 0px 5px;
@@ -345,33 +356,46 @@ body {
 
 /* Mini Laptop View */
 @media all and (max-width: 1024px) {
+/* Header */
+    #header {
+        height: fit-content;
+    }
+/* Nav Links */
+    .logo {
+        justify-self: start;
+    }
+
+    .nav-links {
+        justify-self: center;
+    }
 
 /* Search Bar */
     #search {
-       grid-row: 2/3;
-       grid-column: 3;
-       justify-self: stretch;
+       justify-self: end;
+    }
+
+    #search input {
+        width: 130px;
     }
 
 /* School Name */
     .school-name h1{
-        font-size: 6.25rem;
+        font-size: 85px;
     }
 
     .school-name h4 {
-        padding-right: 100px;
+        right: 200px;
     }
 
 /* School Mission */
     .school-mission p {
-        padding: 0px 80px;
-        padding-bottom: 45px;
-        font-size: 1.125rem;
+        padding: 0px 25px;
+        padding-bottom: 35px;
+        font-size: 18px;
     }
 
     .school-mission a {
-        font-size: 1.25rem;
-        padding: 22px 80px;
+        padding: 18px 80px;
     }
 
 /* Slider */
@@ -471,11 +495,18 @@ body {
 
 /* Tablet View */
 @media all and (max-width: 768px) {
-
+/* Header */
+    #header{
+        height: fit-content;
+    }
 /* Navbar */
     .nav-links {
         grid-column: 3;
         justify-self: end;
+    }
+
+    .logo {
+        justify-self: start;
     }
 
 /* Menu */
@@ -516,24 +547,26 @@ body {
 
 /* School Name */
     .school-name h1{
-        font-size: 4.375rem;
+        font-size: 70px;
     }
 
     .school-name h4 {
-        font-size: 1.125rem;
+        font-size: 18px;
+        right: 100px;
     }
 
 /* School Mission */
     .school-mission p {
-        padding: 0px 70px;
-        padding-bottom: 48px;
-        font-size: 1rem;
+        padding: 0px 15px;
+        font-size: 14px;
+        padding-bottom: 30px;
+        line-height: 25px;
     }
 
-    .school-mission a {
-        font-size: 1.125rem;
+    /* .school-mission a {
+        font-size: 18px;
         padding: 22px 70px;
-    }
+    } */
 
 /* Features */
     .features {
@@ -546,7 +579,7 @@ body {
     }
 
     .environment h2 {
-        font-size: 1.875rem;
+        font-size: 30px;
     }
 
     .env-img {
@@ -604,12 +637,12 @@ body {
 
 /* School Name */
     .school-name h1{
-        font-size: 2.5rem;
+        font-size: 40px;
     }
 
     .school-name h4 {
-        padding-right: 50px;
-        font-size: 1rem;
+       right: 40px;
+        font-size: 16px;
         font-weight: 500;
     }
 
@@ -621,19 +654,18 @@ body {
 
     .school-mission p {
         padding: 0px;
-        padding-bottom: 30px;
-        font-size: .875rem;
+        padding-bottom: 20px;
         line-height: 25px;
     }
 
     .school-mission a {
-        font-size: .875rem;
+        font-size: 14px;
         padding: 15px 50px;
     }
 
 /* Features */
     .features p {
-        font-size: 1rem;
+        font-size: 16px;
     }
 
     .features img {
@@ -657,7 +689,7 @@ body {
     }
 
     .environment h2 {
-        font-size: 1.375rem;
+        font-size: 22px;
     }
 
     .env-img {
@@ -701,15 +733,19 @@ body {
     .balls {
         bottom: 25px;
     }
+
+    .school-name h4 {
+        right: 30px;
+    }
 } 
 
 /* Small Mobile View */
 @media all and (max-width: 320px) {
 /* School Name */
     .school-name h4 {
-        padding-right: 0px;
+        right: 0px;
         align-self: center;
-        font-size: .875rem;
+        font-size: 14px;
     }
 
 /* School Mission */
@@ -724,6 +760,6 @@ body {
 
 /* Events */
     .events-images p {
-        font-size: 1.25rem;
+        font-size: 20px;
     }
 } 
