@@ -6,10 +6,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Chrisantus School</title>
 </head>
 <body>
-   
+    <header id="header">
+        <nav id="navbar">
+            <img class="logo" src="assets/images/school-logo.svg" alt="School Logo">
+
+            <ul class="nav-links">
+                <input type="checkbox" id="checkbox_toggle" />
+
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+                <div class="menu">
+                    <li><a class="single active" onclick="clickSingle(this)" href="/">Home</a></li>
+                    <li><a class="single" onclick="clickSingle(this)" href="#">Admissions</a></li>
+                    <li><a class="single" onclick="clickSingle(this)" href="#">Careers</a></li>
+                    <li><a class="single" onclick="clickSingle(this)" href="#">About us</a></li>
+                    <li><a class="single" onclick="clickSingle(this)" href="#">Contact us</a></li>
+                    <li><a class="single" onclick="clickSingle(this)" href="#">Support WS</a></li>
+                </div>
+            </ul>
+
+            <form id="search">
+                <button type="submit"><img src="assets/icons/search-icon.svg" alt="Search Icon"></button>
+                <input type="search" name="search" placeholder="Search">
+            </form>
+        </nav>  
     
+   
+        <div class="school-name">
+            <h1>Chrisantus School</h1>
+            <h4>Nursery & Primary</h4>
+        </div>
+
+        <div class="school-mission">
+            <p>Our vision is to develop well rounded, confident and responsible individuals who aspire to achieve their full potential. We will do this by providing a welcoming, happy, safe, and supportive learning environment in which everyone is equal and all achievements are celebrated.</p>
+            <a href="#" target="_blank">application form</a>
+        </div>
+        
+        <div class="features">
+            <div class="feature-item">
+                <div class="box box1">
+                    <img src="assets/icons/check-icon.svg" alt="Check Icon">
+                </div>
+                <p>Scholarships</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="box box2">
+                    <img src="assets/icons/check-icon.svg" alt="Check Icon">
+                </div>
+                <p>British<br>Curriculum</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="box box3">
+                    <img src="assets/icons/check-icon.svg" alt="Check Icon">
+                </div>
+                <p>Experienced<br>teachers</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="box box4">
+                    <img src="assets/icons/check-icon.svg" alt="Check Icon">
+                </div>
+                <p>Excursions</p>
+            </div>
+        </div>
+    </header>
+
+    <section id="gallery">
+        <div class="environment">
+            <h2>Learning environment</h2>
+                
+            <div class="env-images slider">
+
+                <div class="slide" id="env-slide-1">
+                    <img class="env-img" src="assets/images/empty-classroom.png" alt="Empty Classroom">
+                    <img class="balls" src="assets/images/balls.png" alt="">
+                </div>
+
+                <div class="slide" id="env-slide-2">
+                    <img class="env-img"  src="assets/images/children-painting.png" alt="Children that are painting">
+                    <img class="balls" src="assets/images/balls.png" alt="">
+                </div>
+
+                <div class="slide" id="env-slide-3">
+                    <img class="env-img"  src="assets/images/children-playing.png" alt="Children that are playing">
+                    <img class="balls" src="assets/images/balls.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="slider-nav">
+                <a class="env-link green" onclick="clickEnvSliderNav(this)" href="#env-slide-1"></a>
+                <a class="env-link" onclick="clickEnvSliderNav(this)" href="#env-slide-2"></a>
+                <a class="env-link" onclick="clickEnvSliderNav(this)" href="#env-slide-3"></a>
+            </div>
+           
+        </div>
+
+        <div class="events">
+            <div class="events-images slider">
+
+                <div class="slide" id="events-slide-1">
+                    <img class="events-img" src="assets/images/sports-day.png" alt="">
+                    <p>Sports Day</p>
+                </div>
+
+                <div class="slide" id="events-slide-2">
+                    <img class="events-img"  src="assets/images/excursion.png" alt="">
+                    <p>Excursion</p>
+                </div>
+
+                <div class="slide" id="events-slide-3">
+                    <img class="events-img"  src="assets/images/school-hall-event.png" alt="">
+                    <p>Event in School Hall</p>
+                </div>
+
+            </div>
+
+            <div class="slider-nav">
+                <a class="events-link green" onclick="clickEventsSliderNav(this)" href="#events-slide-1"></a>
+                <a class="events-link" onclick="clickEventsSliderNav(this)" href="#events-slide-2"></a>
+                <a class="events-link" onclick="clickEventsSliderNav(this)" href="#events-slide-3"></a>
+            </div>
+        </div>
+
+        <div class="kids-awards">
+            <h2>Rewarding students for their excellence</h2>
+                
+            <div class="kids-images slider">
+
+                <div class="slide">
+                    <div id="kids-slide-1">
+                        <img class="kids-img" src="assets/images/student-with-award.png" alt="">
+                        <p>Awesome attitude award 2020/2021 session</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div id="kids-slide-2">
+                        <img class="kids-img"  src="assets/images/student-with-certificate.png" alt="">
+                        <p>Academic excellence 2020/2021 session</p>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div id="kids-slide-3">
+                        <img class="kids-img"  src="assets/images/several-students-with-certificates.png" alt="">
+                        <p>Well behaved students for 2020/2021 session</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="slider-nav">
+                <a class="kids-link green" onclick="clickKidsSliderNav(this)" href="#kids-slide-1"></a>
+                <a class="kids-link" onclick="clickKidsSliderNav(this)" href="#kids-slide-2"></a>
+                <a class="kids-link" onclick="clickKidsSliderNav(this)" href="#kids-slide-3"></a>
+            </div>
+        </div>
+    </section>
+
+<script src="js/script.js"></script>
 </body>
 </html>
