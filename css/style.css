@@ -230,9 +230,9 @@ body {
 
 .environment h2 {
     font-weight: 500;
-    font-size: 36px;
+    font-size: 30px;
     color: #050B2D;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 }
 
 .env-images {
@@ -244,18 +244,18 @@ body {
 
 .env-images div {
     position: relative;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 .env-img {
-    width: 350px;
+    width: 340px;
 }
 
 .balls {
-    width: 200px;
+    width: 160px;
     position: absolute;
-    bottom: 10px;
-    right: -45px;
+    bottom: -10px;
+    right: -35px;
     z-index: -500;
 }
 
@@ -281,7 +281,7 @@ body {
 
 .events-images p {
     font-weight: 600;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 40px;
     color: #07287D;
     text-align: center;
@@ -299,7 +299,7 @@ body {
 
 .kids-awards h2 {
     font-weight: 500;
-    font-size: 36px;
+    font-size: 30px;
     color: #050B2D;
 }
 
@@ -321,12 +321,12 @@ body {
     border-radius: 15px;
     padding: 10px;
     padding-top: 15px;
-    height: 500px;
+    height: 480px;
 }
 
 #kids-slide-1 p, #kids-slide-2 p, #kids-slide-3 p {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     color: #050B2D;
     text-align: left;
     padding: 20px 0px 0px 5px;
@@ -442,14 +442,21 @@ body {
 
 /* Environment */
     .env-img {
-        width: 95%;
+        width: 85%;
         height: 500px;
         object-fit: cover;
         border-radius: 5%;
     }
 
+    .env-images div {
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
     .balls {
-        right: 0px;
+        width: 195px;
+        right: 20px;
+        bottom: 10px;
     }
 
 /* Events */
@@ -477,7 +484,9 @@ body {
 
     #kids-slide-1, #kids-slide-2, #kids-slide-3 {
         padding-top: 25px;
-        height: 625px;
+        height: 500px;
+        width: 90%;
+        margin: 0px auto;
     }
 
     #kids-slide-1 p, #kids-slide-2 p, #kids-slide-3 p {
@@ -485,8 +494,8 @@ body {
     }
 
     .kids-img {
-        width: 80%;
-        height: 500px;
+        width: 70%;
+        height: 400px;
     }
     
 }
@@ -578,17 +587,17 @@ body {
     }
 
     .environment h2 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .env-img {
-        width: 92%;
+        width: 80%;
         height: 400px;
         border-radius: 6%;
     }
 
     .balls {
-        right: 10px; 
+        right: 20px; 
     }
 
     /* Kids Awards */
@@ -692,7 +701,7 @@ body {
     }
 
     .env-img {
-        width: 91%;
+        width: 82%;
         height: 300px;
     }
 
